@@ -1,4 +1,4 @@
-TRANSFER FUNCTION ESTIMATION TOOLBOX
+# TRANSFER FUNCTION ESTIMATION TOOLBOX
 
 MATLAB app to estimate Transfer Functions. Requires MATLAB R2016b or above
 
@@ -17,7 +17,7 @@ The following formats are accepted :
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-# Weighting Filter
+ Weighting Filter
 
 Use either of 'Inverse' or 'Inverse Square Root'  to capture low magnitude dynamics
 
