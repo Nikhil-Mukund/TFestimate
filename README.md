@@ -1,6 +1,6 @@
 # TRANSFER FUNCTION ESTIMATION TOOLBOX
 
-MATLAB app to estimate Transfer Functions. Requires MATLAB R2016b or above
+MATLAB app to estimate noisy Transfer Functions. Requires MATLAB R2016b or above
 
 Developed by: Nikhil Mukund Menon 
                         (nikhil@iucaa.in, nikhil.mukund@LIGO.ORG)
