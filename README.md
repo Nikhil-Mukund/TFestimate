@@ -9,11 +9,11 @@ Based on MATLAB's Rationalfit and Tfest functions
                  (Ref: https://in.mathworks.com/help/rf/ug/rationalfit.html)
                  (Ref: https://in.mathworks.com/help/ident/ref/tfest.html)
 ## To Run App
-Open TFestimate_App_v1.mlapp
-Add new TF measurements by clicking the 'Add new file' button
-Click either Rationalfit or Tfest 
-See & modify generated IIR filters in 'Filter' Section 
-Try modifying default parameters to obtain better fits  
+ Open TFestimate_App_v1.mlapp
+ Add new TF measurements by clicking the 'Add new file' button
+ Click either Rationalfit or Tfest 
+ See & modify generated IIR filters in 'Filter' Section 
+ Try modifying default parameters to obtain better fits  
 
 ## Add TF measurement data to measured_TFs subfolder.
 The following formats are accepted : 
