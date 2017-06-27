@@ -9,7 +9,11 @@ Based on MATLAB's Rationalfit and Tfest functions
                  (Ref: https://in.mathworks.com/help/rf/ug/rationalfit.html)
                  (Ref: https://in.mathworks.com/help/ident/ref/tfest.html)
 ## To Run App
-Open TFestimate_App_v1.mlapp
+Open MATLAB 2016b or above
+
+Go to TFestimate folder
+ 
+Run TFestimate_App_v1.mlapp
 
 Add new TF measurements by clicking the 'Add new file' button
 
