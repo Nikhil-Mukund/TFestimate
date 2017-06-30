@@ -1,14 +1,23 @@
-function generate_plots(FMin,FMax,FigName)
-
-          
+function generate_plots_with_fits(FMin,FMax,FigName)
 
             sys = load(['./measured_TFs/sys.mat']);
             sys = sys.sys;
+            
+            G = load(['zpkFilter.mat']);
+            G = G.G;            
             
             FigName = char(FigName);
             
             [TF_resp,TF_W]  = frdata(sys,'v');
             TF_freq             = TF_W;
+            
+
+            
+            [TF_fit_mag,TF_fit_phs,TF_fit_W]  = bode(G,'v');
+            TF_fit_mag = squeeze(TF_fit_mag);
+            TF_fit_phs = squeeze(TF_fit_phs);
+            
+            TF_fit_freq             = TF_fit_W;            
             
             if nargin == 0
                 FMin = TF_freq(1);
@@ -19,16 +28,17 @@ function generate_plots(FMin,FMax,FigName)
             TF_phs  = angle(TF_resp);
             
             
-            color_val =   [0.8500  ,  0.3250 ,   0.0980];
             
             BO = bodeoptions;
             BO.PhaseWrapping = 'on';
             BO.FreqUnits = 'Hz';
             
-            fig1 = figure;
+            fig1 = figure; clf
+            hold all
             
             subplot(211)
-            loglog(TF_freq,TF_mag,'color',color_val);
+            loglog(TF_freq,TF_mag); hold all
+            loglog(TF_fit_freq,TF_fit_mag);
             grid('on');
             xlim([FMin FMax]);
             xlabel('Frequency (Hz)','FontSize',15)
@@ -36,7 +46,8 @@ function generate_plots(FMin,FMax,FigName)
             set(gca,'FontSize',15)
             
             subplot(212)
-            semilogx(TF_freq,wrapTo180(TF_phs*180/pi),'color',color_val);
+            semilogx(TF_freq,wrapTo180(TF_phs*180/pi)); hold all
+            semilogx(TF_fit_freq,wrapTo180(TF_fit_phs));
             grid('on');
             xlim([FMin FMax]);
             xlabel('Frequency (Hz)','FontSize',15)
