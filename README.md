@@ -34,7 +34,8 @@ Try modifying default parameters to obtain better fits
 The following formats are accepted : 
    1. [Freq real_TF imag_TF]
    2. [Freq complex_TF]
-   3. FRD Model
+   3. [Freq Mag Phs(in radian) ]
+   4. FRD Model
 
 
 ## Weighting Filter
