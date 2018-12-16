@@ -16,7 +16,7 @@ Based on MATLAB's Rationalfit and Tfest functions
 
 
 ## To Run App
-Open MATLAB 2016b or above
+Open Matlab (Recommended Version: R2018b)
 
 Go to TFestimate folder
  
