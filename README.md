@@ -1,7 +1,7 @@
 # TRANSFER FUNCTION ESTIMATION TOOLBOX
 
 ```diff 
--This project is now archived. Use the updated version: https://github.com/Nikhil-Mukund/RIFF
+- ALERT !!!! This project is now archived. Use the updated version available at https://github.com/Nikhil-Mukund/RIFF
 ```
 
 MATLAB app to estimate noisy Transfer Functions. Requires MATLAB R2016b or above
