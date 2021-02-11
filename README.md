@@ -2,7 +2,8 @@
 
 ```diff 
 - ALERT !!!! This project is now archived. 
-- [Use RIFF instead] (https://github.com/Nikhil-Mukund/RIFF)
+- For better results & functionality use RIFF: Robust IIR Fitting and Filtering
+- https://github.com/Nikhil-Mukund/RIFF 
 ```
 
 MATLAB app to estimate noisy Transfer Functions. Requires MATLAB R2016b or above
