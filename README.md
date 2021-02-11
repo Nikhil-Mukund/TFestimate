@@ -2,7 +2,7 @@
 
 ```diff 
 - ALERT !!!! This project is now archived. 
-- For better results & functionality use RIFF: Robust IIR Fitting and Filtering
+- For better results & functionalities use RIFF: Robust IIR Fitting and Filtering
 - https://github.com/Nikhil-Mukund/RIFF 
 ```
 
